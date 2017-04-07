@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <title>My Form</title>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+  <form>
+    <div formLine>
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+    </div>
+    <div formLine>
+      <input type="date">
+      <input type="color">
+      <input type="password" placeholder="Password">
+    </div>
+    <div formLine>
+      <input type="email" placeholder="myaddress@email.com">
+      <input list="tracking" name="tracking" placeholder="Where did you hear about us?"/>
+        <datalist id="tracking">
+          <option value="Billboards">
+          <option value="TV Ad">
+          <option value="Social Media">
+          <option value="Friend">
+          <option value="Employee">
+        </datalist>
+    </div>
+    <div formLine>
+      <input type="radio" name="text" id="textonly" value="textonly">
+      <label for="textonly">Text Only</label>
+      <input type="radio" name="text" id="textandemail" value="textandemail" selected="true">
+      <label for="textandemail">Text and Email</label>
+      <input type="radio" name="text" id="none" value="none">
+      <label for="none">None</label>
+    </div>
+    <div formLine>
+      <button>Log In</button>
+    </div>
+
+  </form>
+</body>
+</html>

@@ -2,8 +2,9 @@ form {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #008080;
-  margin-left: 0 auto;
-  width: 40%;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
   padding: 25px;  
   -moz-border-radius:10px; /* Firefox */
     -webkit-border-radius: 10px; /* Safari, Chrome */
@@ -16,6 +17,17 @@ form {
 input {
   margin: 5px;
   font-size: 14px;
+}
+
+input:invalid {
+  background: #CCFFFF;
+}
+
+[column] {
+  width: 25%;
+  height: 100%;
+  float: left;
+  display: block;
 }
 
 button {
@@ -33,6 +45,16 @@ label {
   color: #fff;
 }
 
+[clearfix]::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 div[formLine] {
   display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  [column] {width: 100%;}
 }
